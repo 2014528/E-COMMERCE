@@ -1,0 +1,15 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+Routes {
+    flex: 1;
+    padding: 20px;
+}

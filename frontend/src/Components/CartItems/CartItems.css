@@ -1,0 +1,253 @@
+/* Main container */
+.cartitems {
+    margin: 100px 170px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Horizontal line */
+.cartitems hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+/* Header row */
+.cartitems-header {
+    display: grid;
+    grid-template-columns: 100px 3fr 1fr 1fr 1fr 50px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Product row */
+.cartitems-row {
+    display: grid;
+    grid-template-columns: 100px 3fr 1fr 1fr 1fr 50px;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* Product image */
+.carticon-product-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Title text */
+.cartitems-row p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Quantity button */
+.cartitems-quantity {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: default;
+}
+
+/* Remove icon */
+.cartitems-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Cart total section */
+.cartitems-total {
+    margin-top: 40px;
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    width: 400px;
+    background: #fafafa;
+    border-radius: 8px;
+}
+
+.cartitems-total h1 {
+    margin-bottom: 20px;
+}
+
+.cartitems-total-item, .cartitems-total-tem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cartitems-total button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 0;
+    background: #ff4141;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Promo code section */
+.cartitems-promocode {
+    margin-top: 30px;
+}
+
+.cartitems-promobox {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cartitems-promobox input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cartitems-promobox button {
+    padding: 8px 15px;
+    background: #252525;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .cartitems {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .cartitems-header p,
+  .cartitems-row p {
+    font-size: 14px;
+  }
+
+  .carticon-product-icon {
+    width: 60px;
+    height: auto;
+  }
+
+  .cartitems-remove-icon {
+    width: 20px;
+  }
+
+  .cartitems-total h1,
+  .cartitems-total-item p,
+  .cartitems-total-item h3 {
+    font-size: 16px;
+  }
+
+  .cartitems-total button,
+  .cartitems-promobox button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .cartitems-promobox input {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .cartitems-header {
+    display: none; /* hide header row to save space */
+  }
+
+  .cartitems-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .cartitems-row img.carticon-product-icon {
+    width: 50px;
+    margin-bottom: 5px;
+  }
+
+  .cartitems-row p,
+  .cartitems-quantity {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .cartitems-remove-icon {
+    width: 18px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .cartitems-total,
+  .cartitems-promocode {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .cartitems-total button,
+  .cartitems-promobox button {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .cartitems-promobox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cartitems-promobox input {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .cartitems-row img.carticon-product-icon {
+    width: 40px;
+  }
+
+  .cartitems-row p,
+  .cartitems-quantity {
+    font-size: 12px;
+  }
+
+  .cartitems-remove-icon {
+    width: 16px;
+  }
+
+  .cartitems-total h1,
+  .cartitems-total-item p,
+  .cartitems-total-item h3 {
+    font-size: 14px;
+  }
+
+  .cartitems-total button,
+  .cartitems-promobox button {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+
+  .cartitems-promobox input {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}

@@ -1,0 +1,68 @@
+.breadcrum{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color:#131313;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 60px 170px;
+    text-transform: capitalize;
+}
+/* Ensure base breadcrumb layout */
+.breadcrum {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping instead of hiding */
+  gap: 6px;
+  font-size: 16px;
+}
+
+.breadcrum img {
+  display: inline-block;
+  width: 14px;
+  height: auto;
+}
+
+
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .breadcrum {
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .breadcrum img {
+    width: 12px;
+  }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .breadcrum {
+    font-size: 12px;
+    line-height: 1.6;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 0 10px;
+  }
+
+  .breadcrum img {
+    width: 12px;   /* keep icons visible */
+  }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .breadcrum {
+    font-size: 11px;
+    line-height: 1.4;
+    justify-content: center;
+    gap: 4px;
+    padding: 0 5px;
+  }
+
+  .breadcrum img {
+    width: 10px;   /* don’t shrink too small */
+  }
+}

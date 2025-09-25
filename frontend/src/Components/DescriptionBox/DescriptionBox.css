@@ -1,0 +1,112 @@
+/* Main container */
+.descriptionbox {
+  margin: 120px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Navigator container */
+.descriptionbox-navigator {
+  display: flex;
+  gap: 20px; /* space between nav items */
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+
+/* Individual nav box */
+.descriptionbox-nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  min-width: 170px;
+  padding: 0 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.descriptionbox-nav-box:hover {
+  border-color: #ff4141;
+  background-color: #ffecec;
+  color: #ff4141;
+  transform: translateY(-2px);
+}
+
+/* Active tab styling */
+.descriptionbox-nav-box.active {
+  border-color: #ff4141;
+  background-color: #ff4141;
+  color: #fff;
+}
+
+.descriptionbox-description{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    border:1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .descriptionbox {
+    padding: 20px;
+  }
+
+  .descriptionbox-navigator {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .descriptionbox-description p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .descriptionbox {
+    padding: 15px;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 14px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  .descriptionbox-description p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .descriptionbox {
+    padding: 10px;
+  }
+
+  .descriptionbox-nav-box {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .descriptionbox-description p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
